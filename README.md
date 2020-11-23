@@ -12,11 +12,11 @@ git clone https://github.com/OCarvajalMora/laravel-mau.git
 
 ### 2. Set up your environment
 * Duplicate **.env.example** file into the same location and rename the **copy of env.example** file to **.env**.
-* Install the project dependencies with Composer, running the following command:
+* Install the project dependencies with Composer, running the following command into your folder project:
 ```bash
 composer install
 ```
-* Then, generate a new APP_KEY into your **.env** file running this command:
+* Then, generate a new APP_KEY into your **.env** file running this command (into your folder project, sure):
 ```bash
 # the key generated will be stored into APP_KEY variable on your .env file
 php artisan key:generate
