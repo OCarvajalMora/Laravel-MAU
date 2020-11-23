@@ -11,17 +11,28 @@ git clone https://github.com/OCarvajalMora/laravel-mau.git
 ```
 
 ### 2. Set up your environment
-* Duplicate **.env.example** file into the same location.
-* Rename the **copy of env.example** file to **.env**.
-* In **.env file**, set up your database and Mailtrap variables (this is necessary if you want to use email validation, and reset password functionalities, for example). Learn more about Mailtrap.io [here](https://mailtrap.io/).
+* Duplicate **.env.example** file into the same location and rename the **copy of env.example** file to **.env**.
+* Install the project dependencies with Composer, running the following command:
+```bash
+composer install
+```
+* Then, generate a new APP_KEY into your **.env** file running this command:
+```bash
+# this command will generate an app key and it will be stored into APP_KEY variable on your .env file
+php artisan key:generate
+```
+* Finally, in **.env file**, set up your database and Mailtrap variables (Mailtrap is necessary if you want to use email validation, and reset password functionalities, for example). Learn more about Mailtrap.io [here](https://mailtrap.io/).
 
 ### 3. Usage
 
-Open your command line (terminal on Mac and cmd on Window) into the project folder location and run the following commands:
+Open your command line (terminal on Mac and cmd on Windows) into the project folder location and run the following commands:
 
 ```bash
-php artisan migrate # this will run the database migrations 
-php artisan run serve # this will run the application into a local host. Usually: http://127.0.0.1:800
+# this will run the database migrations 
+php artisan migrate
+
+# this will run the application into a local host. Usually, http://127.0.0.1:8000
+php artisan run serve 
 ```
 
 
