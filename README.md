@@ -18,7 +18,7 @@ composer install
 ```
 * Then, generate a new APP_KEY into your **.env** file running this command:
 ```bash
-# this command will generate an app key and it will be stored into APP_KEY variable on your .env file
+# the key generated will be stored into APP_KEY variable on your .env file
 php artisan key:generate
 ```
 * Finally, in **.env file**, set up your database and Mailtrap variables (Mailtrap is necessary if you want to use email validation, and reset password functionalities, for example). Learn more about Mailtrap.io [here](https://mailtrap.io/).
