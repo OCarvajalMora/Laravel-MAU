@@ -15,7 +15,7 @@ Route::redirect('', 'dashboard', 301);
  */
 Route::middleware(['auth', 'verified'])->group(function () {
 
-    Route::get('/dashboard', function () {return 'Dashboard';})->name('dashboard');
+    Route::get('/dashboard', function () {return view('dashboard');})->name('dashboard');
 
 });
 
@@ -34,7 +34,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
  Route::post('/sign-up', [AuthController::class, 'register'])->name('register');
 
  // Logout
- Route::get('/sign-out', [AuthController::class, 'logout'])->name('logout'); // CAMBIAR A POST
+ Route::post('/sign-out', [AuthController::class, 'logout'])->name('logout');
 
 
 /**
