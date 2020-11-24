@@ -11,7 +11,7 @@ git clone https://github.com/OCarvajalMora/laravel-mau.git
 ```
 
 ### 2. Set up your environment
-* Duplicate **.env.example** file into the same location and rename the **copy of env.example** file to **.env**.
+* Duplicate **.env.example** file into the same location and rename the **copy of .env.example** file to **.env**.
 * Install the project dependencies with Composer, running the following command into your folder project:
 ```bash
 composer install
