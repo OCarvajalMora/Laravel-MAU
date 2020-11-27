@@ -21,7 +21,7 @@ composer install
 # the key generated will be stored into APP_KEY variable on your .env file
 php artisan key:generate
 ```
-* Finally, in **.env file**, set up your database and Mailtrap variables (Mailtrap is necessary if you want to use email validation, and reset password functionalities, for example). Learn more about Mailtrap.io [here](https://mailtrap.io/).
+* Finally, in **.env file**, set up your database and Mailtrap variables (Mailtrap is necessary if you want to use email validation, and reset password functionalities, for example, in development environment). Learn more about Mailtrap.io [here](https://mailtrap.io/).
 
 ### 3. Usage
 
